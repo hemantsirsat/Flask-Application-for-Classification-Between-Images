@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h3>Predicted Result: {{result}}</h3>
+    <hr>
+    <img src="{{url_for('static', filename=imagepath)}}" class="img-responsive" height="300px" width="300px">
+    <br>
+    <a class="btn btn-sm btn-primary mt-2" href='/'>Upload New Image</a>
+    
+</div>
+{% endblock %}
